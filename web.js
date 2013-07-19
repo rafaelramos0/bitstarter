@@ -7,7 +7,7 @@ app.createServer(express.logger());
 app.get('/', function(request, response) {
 //  response.send('Hello World 2!');
     reponse.setHeader('Content-Type', 'text/html');
-    var buffer = fs.readFileSync('./index.html','utf-8'));
+    var buffer = fs.readFileSync('./index.html','utf-8');
     response.send( buffer );
 //    response.send(fs.readFileSync('index.html').toString('utf-81');
 });
